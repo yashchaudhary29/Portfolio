@@ -1,0 +1,98 @@
+/*Resume*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #000000;
+    padding: 40px;
+  }
+  
+  .resume {
+    max-width: 900px;
+    margin: auto;
+    background: rgb(51, 49, 49);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+  }
+  
+  .header {
+    text-align: center;
+    border-bottom: 2px solid #e0c3c3;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 32px;
+    color: #ffffff;
+  }
+  
+  .header p {
+    color: #fff6f6;
+    margin-top: 8px;
+    font-size: 15px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    color: #1895f5;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #0a3d62;
+    display: inline-block;
+    padding-bottom: 4px;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  ul li::before {
+    content: '•';
+    color: #0f74bd;
+    margin-right: 10px;
+  }
+  
+  .info  {
+    color: #fdfbfb;
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  
+  .project,
+  .course {
+    margin-bottom: 15px;
+  }
+  
+  .project-title {
+    font-weight: 600;
+    color: #e7e7e7;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill-tag {
+    background: #6a91ad;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  
+/* for projects*/
+

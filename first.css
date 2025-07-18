@@ -1,0 +1,150 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: aliceblue;
+}
+
+
+.border {
+    border: 1px solid transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.border:hover {
+    border: 1px solid rgb(250, 247, 247);
+}    
+
+.navbar {
+    background-color: black;
+    height: 1.5cm;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.name {
+    background-size: contain;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.56rem;
+}
+
+.tab {
+    margin-left: 15cm;
+    
+}
+
+
+a {
+    color: rgb(253, 253, 253);
+    display: inline;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    padding: 20px;
+    gap: 15px;
+    font-size: 14px;
+}   
+
+i {
+    color: rgb(255, 255, 255);
+    display: flex, inline;
+    align-items: center;
+    padding: 10px 20px;
+ 
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sq {
+    flex: 1;
+    background-image: url("pic 2.jpeg");
+    background-color: rgb(59, 58, 58);
+   
+    
+}
+
+.col2 {
+    flex: 1;
+    background-color: rgb(51, 51, 51);
+}
+
+.my {
+    color: white;
+    font-size: 100px;
+    font-family: Arial, sans-serif;
+    margin-left: 10%;
+}
+
+.para {
+    font-size: 50px;
+    margin-left: 10%;
+    margin-top: 20px;
+    line-height: 3.0;
+    color: rgb(179, 179, 179);
+}
+
+.ani_button {
+    background-color: #e7e7e7;
+    color: rgb(43, 22, 22);
+    border: none;
+    padding: 12px 24px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: 'Arial Narrow Bold';
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10%;
+}
+
+.ani_button.hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+.video-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    margin-top: 40px;
+  }
+  
+  .play-button {
+    background-color: #020202;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    margin-top: -120px;
+    width: 130px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .play-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+  }
+  .inter{
+    color: #7a7a7a;
+    margin-left: 80px;
+    justify-content: space-evenly;
+  }
+  
+ 

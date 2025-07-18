@@ -1,0 +1,152 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: rgb(51, 51, 51);
+}
+
+.border {
+    border: 1px solid transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.border:hover {
+    border: 1px solid rgb(250, 247, 247);
+}    
+
+.navbar {
+    background-color: rgb(51, 51, 51);
+    height: 1.5cm;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.name {
+    background-size: contain;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.56rem;
+}
+
+.tab {
+    margin-left: 15cm;
+    
+}
+
+
+a {
+    color: rgb(253, 253, 253);
+    display: inline;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    padding: 20px;
+    gap: 15px;
+    font-size: 14px;
+}   
+
+i {
+    color: rgb(255, 255, 255);
+    display: flex, inline;
+    align-items: center;
+    padding: 10px 20px;
+ 
+}
+
+body {
+    background-color: rgb(51, 51,51);
+    margin: 0;
+    height: 100%;
+}
+
+.border {
+    border: 1px solid transparent;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.border:hover {
+    border: 1px solid rgb(250, 247, 247);
+}    
+
+
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    height: 1.5cm;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.name {
+    background-size: contain;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.56rem;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}    
+ 
+.part3 {
+    flex: 2;
+    background-color: rgb(51, 51, 51);
+}
+
+.part4 {
+    flex: 2;
+    background-color: rgb(51, 51, 51);
+}
+
+.about {
+    color: white;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+p {
+    color: white;
+    margin-bottom: -10px;
+    margin-top: 5%;
+    margin-left: 5%;
+    line-height: 2.0;
+}
+.quality1{
+    color: aliceblue;
+    margin-top: 35px;
+    margin-left: 5%;
+    
+}
+.quality2{
+    color: aliceblue;
+    margin-left: 25rem;
+}
+.quality3{
+    color: aliceblue;
+    margin-left: 5%;
+}
+
+.img {
+    background-image: url("pic 1.jpeg");
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 40px;
+    margin-left: 15%;
+}

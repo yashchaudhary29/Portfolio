@@ -1,0 +1,339 @@
+/* 1. Global Reset & Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #050505;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --accent-color: #00f2ff; /* Cyber Blue */
+    --text-main: #ffffff;
+    --text-dim: #b0b0b0;
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* 2. Navigation Styling */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+nav .logo {
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: var(--accent-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* 3. Hero Section (Extreme Impact) */
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #111 0%, #050505 100%);
+}
+
+#home h1 {
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 900;
+    line-height: 1;
+}
+
+.highlight {
+    color: var(--accent-color);
+    text-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+}
+
+/* 4. Glassmorphism Cards (Projects & Stats) */
+section {
+    padding: 100px 10%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 20px;
+}
+
+.grid-container, #projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project-card, .stat-card {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.1);
+}
+
+/* 5. Buttons & Inputs */
+button, .btn {
+    background: var(--accent-color);
+    color: #000;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+/* 6. Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+input, textarea {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+/* 7. Stats Styling */
+.stats-container {
+    display: flex;
+    gap: 10px;
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+/*leet img*/
+.leetcode-api-card {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.leetcode-api-card img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(0, 242, 255, 0.2));
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.social-sidebar {
+    position:fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.social-sidebar a {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--text-dim);
+    transition: color 0.3s;
+    
+    /* FIX: Shuruat mein ise hide rakho taaki jhatka na lage */
+    opacity: 0;
+    transform: translateX(-100px);
+}
+
+.social-sidebar a:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateX(5px) scale(1.1);
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+/* Hero Container Setup */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+}
+
+.home-text {
+    flex: 1;
+    text-align: left; /* Text ko left kar diya */
+}
+
+/* Photo Styling */
+.home-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.img-box {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Gol karne ke liye */
+    border: 3px solid var(--accent-color);
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 242, 255, 0.3); /* Cyber Blue Glow */
+    transition: 0.5s;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Photo stretch nahi hogi */
+}
+
+.img-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--accent-color);
+}
+/* Jab screen choti ho (Mobile) */
+
+
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+    section { padding: 60px 5%; }
+    
+    .social-sidebar {
+        position: relative; /* Fixed se normal kar diya */
+        flex-direction: row;
+        justify-content: center;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 20px 0;
+    }
+
+    nav ul { display: none; } /* Mobile menu simple rakhne ke liye */
+    
+    .stats-container {
+        flex-direction: column;
+    }
+
+    .home-container {
+        flex-direction: column-reverse; /* Mobile par photo upar aayegi */
+        text-align: center;
+    }
+    .home-text { text-align: center; }
+    .img-box { width: 200px; height: 200px; }
+}
+
+
+.skills-mini {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.skills-mini span {
+    background: rgba(0, 242, 255, 0.1);
+    color: var(--accent-color);
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    border: 1px solid var(--accent-color);
+}
+
+
+/* certificate*/
+
+/* Dono sections ko screen ke beech mein lane ke liye */
+#projects, #certificates {
+    padding: 60px 5%; /* 5% gap left aur right se */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Cards ko center karega */
+}
+
+/* Section ki headings ko poori width dene ke liye */
+#projects h2, #certificates h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Cards ka size fix karne ke liye taaki wo chipke nahi */
+.project-card {
+    flex: 1 1 300px; /* Minimum 300px wide, phir adjust hoga */
+    max-width: 350px;
+    /* Aapki purani styling jo bhi hai wo apply hoti rahegi */
+}

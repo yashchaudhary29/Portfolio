@@ -40,10 +40,25 @@ nav {
     border-bottom: 1px solid var(--glass-border);
 }
 
+
+.logo-container {
+    display: flex;         /* Isse dono elements ek line mein aa jayenge */
+    align-items: center;    /* Logo aur Text vertically center ho jayenge */
+    gap: 10px;             /* Logo aur Name ke beech thoda space dene ke liye */
+}
+
+.logo1 {
+    height: 40px; 
+    width: auto; 
+    border-radius: 50%;
+    display: block;        /* Extra space hatane ke liye */
+}
+
 nav .logo {
     font-weight: 900;
     letter-spacing: -1px;
     color: var(--accent-color);
+    white-space: nowrap;   /* Taki name do line mein na tute */
 }
 
 nav ul {
@@ -336,4 +351,5 @@ input:focus, textarea:focus {
     flex: 1 1 300px; /* Minimum 300px wide, phir adjust hoga */
     max-width: 350px;
     /* Aapki purani styling jo bhi hai wo apply hoti rahegi */
+
 }

@@ -172,32 +172,55 @@ input:focus, textarea:focus {
 }
 
 /* 7. Stats Styling */
+/* Stats Styling Fixes */
 .stats-container {
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    flex-wrap: wrap; /* Isse cards wrap ho sakenge */
+    justify-content: center;
 }
 
-.stat-card h3 {
-    font-size: 2.5rem;
-    color: var(--accent-color);
-}
-/*leet img*/
-.leetcode-api-card {
+.stat-card {
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-width: 250px; /* Laptop par ek line mein rakhega */
     background: var(--card-bg);
     border: 1px solid var(--glass-border);
     border-radius: 20px;
-    padding: 10px;
-    overflow: hidden;
+    padding: 20px;
+    text-align: center;
 }
 
-.leetcode-api-card img {
+/* LeetCode Card Specific Fix */
+.leetcode-api {
+    flex: 2; /* Laptop par isko thoda bada dikhayega */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.leetcode-api img {
     max-width: 100%;
     height: auto;
-    filter: drop-shadow(0 0 10px rgba(0, 242, 255, 0.2));
+    border-radius: 10px;
+}
+
+/* Mobile View (The Main Fix) */
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column; /* Cards ek ke niche ek aayenge */
+        align-items: center;
+    }
+
+    .stat-card {
+        width: 100%; /* Mobile par poori width lega */
+        max-width: 350px; /* Lekin bahut zyada nahi failega */
+    }
+
+    .leetcode-api img {
+        width: 100%; /* Mobile screen ke andar fit rahega */
+        max-width: 320px; /* Image ko bahut bada hone se rokega */
+    }
 }
 
 /* Mobile responsive */
@@ -353,3 +376,4 @@ input:focus, textarea:focus {
     /* Aapki purani styling jo bhi hai wo apply hoti rahegi */
 
 }
+

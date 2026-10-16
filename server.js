@@ -19,14 +19,14 @@ app.post('/contact', async (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'yc2670235@gmail.com', // Apna asli email yahan dalo
-            pass: 'chasnzklkzpfgphi'    // 16-digit App Password (bina space)
+            user: 'yc2670@gmail.com', // Apna asli email yahan dalo
+            pass: 'chasnzklkzphithi'    // 16-digit App Password (bina space)
         }
     });
 
     const mailOptions = {
-        from: 'yc2670235@gmail.com',
-        to: 'yc2670235@gmail.com', // Aapko khud hi email aayega
+        from: 'yc2670@gmail.com',
+        to: 'yc2670@gmail.com', // Aapko khud hi email aayega
         subject: `New Message from ${name}`,
         text: `From: ${email}\n\nMessage: ${message}`
     };

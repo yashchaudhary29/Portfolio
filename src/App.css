@@ -1,0 +1,38 @@
+/* 1. Reset Global Stacking Context */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body, html {
+    background-color: #050505 !important;
+    color: #ffffff !important;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    position: relative;
+    z-index: 10; 
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    margin-top:auto;
+    border-left: 5px solid var(--accent-color);
+    padding-left: 20px;
+    color: #ffffff !important;
+}
+
+section {
+    padding: 100px 10%;
+    position: relative;
+    z-index: 2;
+    opacity: 1 !important;
+    visibility: visible !important;
+}

@@ -1,0 +1,36 @@
+.about-content {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.skills-mini {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-mini span {
+    background: rgba(0, 242, 255, 0.1);
+    color: var(--accent-color);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(0, 242, 255, 0.2);
+}
+
+.education-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.edu-item, .skills-box, .hobbies {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    padding: 20px;
+    border-radius: 15px;
+}

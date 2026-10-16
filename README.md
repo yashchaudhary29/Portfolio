@@ -22,28 +22,6 @@ npm run dev
 Yash Chaudhary - Aspiring Software Engineer - DSA with Java & Full-Stack
 
 
-### 📁 Project StructureMy_Portfolio/
-
-
-├── src/
-│   ├── assets/
-│   ├── components/
-│   │   ├── About.jsx
-│   │   ├── Certificates.jsx
-│   │   ├── Contact.jsx
-│   │   ├── Education.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Home.jsx
-│   │   ├── Navbar.jsx
-│   │   ├── Projects.jsx
-│   │   ├── SocialSideBar.jsx
-│   │   └── Stats.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── package.json
-├── vite.config.js
-└── index.html
 
 
 
@@ -55,6 +33,7 @@ npm install
 npm run dev
 
 
-👨‍💻 AuthorYash ChaudharyB.Tech CSE Student @ AKTUAspiring Software Engineer | DSA with Java & Full-Stack Development
+👨‍💻 AuthorYash Chaudhary
+B.Tech CSE Student @ AKTUAspiring Software Engineer | DSA with Java & Full-Stack Development
 GitHub: github.com
 LinkedIn: https://www.linkedin.com/in/yash-chaudhary-1a633233b/

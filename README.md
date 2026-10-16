@@ -1,16 +1,60 @@
-# React + Vite
+# Yash Chaudhary - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern and responsive personal portfolio built with React.js + Vite to showcase my skills, projects, and coding journey as a B.Tech CSE Student @ AKTU.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+### 🚀 Features
+- Dark Theme with Cyan Accent
+- Sections: Home, About, Education, Coding Stats, Projects, Certificates, Contact
+- Hero with Name, Role, Resume Button & Profile Image
+- Social Sidebar - GitHub, LinkedIn
+- Fully Responsive
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛠️ Tech Stack
+React.js, Vite, JavaScript, HTML5, CSS3
 
-## Expanding the Oxlint configuration
+### ⚙️ Run Locally
+npm install
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 👨‍💻 Author
+Yash Chaudhary - Aspiring Software Engineer - DSA with Java & Full-Stack
+
+
+### 📁 Project StructureMy_Portfolio/
+
+
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── About.jsx
+│   │   ├── Certificates.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Education.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Home.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Projects.jsx
+│   │   ├── SocialSideBar.jsx
+│   │   └── Stats.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── package.json
+├── vite.config.js
+└── index.html
+
+
+
+### ⚙️ Run Locally
+```bash
+git clone https://github.com/yash-chaudhary/My_Portfolio.git
+cd My_Portfolio
+npm install
+npm run dev
+
+
+👨‍💻 AuthorYash ChaudharyB.Tech CSE Student @ AKTUAspiring Software Engineer | DSA with Java & Full-Stack Development
+GitHub: github.com
+LinkedIn: https://www.linkedin.com/in/yash-chaudhary-1a633233b/
